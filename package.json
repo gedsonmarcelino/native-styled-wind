@@ -1,0 +1,35 @@
+{
+  "name": "native-styled-wind",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/components.js",
+  "types": "dist/components.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prepublish": "npm run test && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@types/styled-components": "^5.1.26",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gedsonmarcelino/native-styled-wind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gedsonmarcelino/native-styled-wind/issues"
+  },
+  "homepage": "https://github.com/gedsonmarcelino/native-styled-wind#readme",
+  "files": [
+    "dist/**/*"
+  ]
+}
