@@ -5,6 +5,7 @@ import flexbox from "./flexbox";
 import layout from "./layout";
 import typography from "./typography";
 import sizing from "./sizing";
+import spacing from "./spacing";
 
 export default {
   ...backgrounds,
@@ -14,4 +15,5 @@ export default {
   ...layout,
   ...typography,
   ...sizing,
+  ...spacing,
 };

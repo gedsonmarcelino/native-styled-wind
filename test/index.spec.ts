@@ -44,4 +44,12 @@ describe("native-styled-wind", () => {
     result = stylish({ styles: "max-h-{20}" });
     expect(result).toBe(" max-height: 20px;");
   });
+
+  it("should resolve dynamic px- and py-", () => {
+    let result = stylish({ styles: "px-{10}" });
+    expect(result).toBe(" padding-left: 10px;  padding-right: 10px;");
+
+    result = stylish({ styles: "py-{20}" });
+    expect(result).toBe(" padding-top: 20px;  padding-bottom: 20px;");
+  });
 });
