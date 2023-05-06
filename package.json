@@ -6,6 +6,7 @@
   "types": "dist/components.d.ts",
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "build": "tsc",
     "prepublish": "npm run test && npm run build"
   },
