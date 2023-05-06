@@ -2,6 +2,12 @@
 
 How about leveraging the power of React Native, Styled Components, and Tailwind CSS in your next project? That's precisely what this project is designed to accomplish.
 
+## Todo List
+
+[ ] add layout: top / right / bottom / left
+[ ] add fonts
+[ ] add colors
+
 ## How to publish
 
 ```
