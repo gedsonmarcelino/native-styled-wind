@@ -13,7 +13,7 @@ export function stylish(props: any) {
     const match = hasBrackets(current);
     if (match) {
       const { key, value } = getValueIntoBrackets(match);
-      return `${previous} ${CSS[key].replace("{value}", value)};`;
+      return `${previous} ${CSS[key].replace(/\{value\}/g, value)};`;
     }
 
     return `${previous} ${CSS[current]};`;
