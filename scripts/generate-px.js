@@ -1,6 +1,6 @@
 const items = {
-  px: ["padding-left", "padding-right"],
-  py: ["padding-top", "padding-bottom"],
+  "inset-x": ["left", "right"],
+  "inset-y": ["top", "bottom"],
 };
 
 Object.entries(items).forEach((item) => {
@@ -36,5 +36,5 @@ Object.entries(items).forEach((item) => {
 
   console.log(`"${item[0]}-72": "${item[1][0]}: 288px; ${item[1][1]}: 288px",`);
   console.log(`"${item[0]}-80": "${item[1][0]}: 320px; ${item[1][1]}: 320px",`);
-  console.log(`"${item[0]}-96": "padding-tio: 384px; ${item[1][1]}: 384px",`);
+  console.log(`"${item[0]}-96": "${item[1][0]} 384px; ${item[1][1]}: 384px",`);
 });

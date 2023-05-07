@@ -5,8 +5,8 @@ How about leveraging the power of React Native, Styled Components, and Tailwind 
 ## Todo List
 
 [ ] add layout: top / right / bottom / left
-[ ] add fonts
-[ ] add colors
+[x] add fonts
+[x] add custom colors
 
 ## How to publish
 

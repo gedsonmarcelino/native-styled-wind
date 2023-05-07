@@ -5,18 +5,18 @@ export function hasBrackets(str: string) {
 export function getValueIntoBrackets(match: string[]) {
   // console.log("match", match);
   const value = parseInt(match[2], 10);
-  const key = match[1] + "-";
+  const key = `${match[1]  }-`;
   return { key, value };
 }
 
 export function loadCustomConfig() {
   try {
-    const customConfig = require("../../../native-styled-wind.json");
+    const customConfig = require('../../../native-styled-wind.json');
     if (customConfig) {
       return customConfig;
     }
   } catch (error) {
-    console.log("error :>> ", error);
+    console.log('error :>> ', error);
   }
 
   return {};

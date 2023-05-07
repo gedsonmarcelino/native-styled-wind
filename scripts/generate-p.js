@@ -1,12 +1,15 @@
 const items = {
-  m: "margin",
-  ml: "margin-left",
-  mr: "margin-right",
-  mt: "margin-top",
-  mb: "margin-bottom",
+  top: 'top',
+  left: 'left',
+  right: 'right',
+  botton: 'botton',
+  // ml: "margin-left",
+  // mr: "margin-right",
+  // mt: "margin-top",
+  // mb: "margin-bottom",
 };
 
-Object.entries(items).forEach((item) => {
+Object.entries(items).forEach(item => {
   console.log(`"${item[0]}-": "${item[1]}: {value}px",`);
   console.log(`"${item[0]}-px": "${item[1]}: 1px",`);
 

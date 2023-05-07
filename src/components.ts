@@ -1,5 +1,5 @@
-import styled from "styled-components/native";
-import { stylish } from "./stylish";
+import styled from 'styled-components/native';
+import { stylish } from './stylish';
 
 const Text = styled.Text.attrs((props: any) => ({
   styles: props.styles,
