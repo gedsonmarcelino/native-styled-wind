@@ -1,6 +1,6 @@
 const items = {
-  mx: ["margin-left", "margin-right"],
-  my: ["margin-top", "margin-bottom"],
+  px: ["padding-left", "padding-right"],
+  py: ["padding-top", "padding-bottom"],
 };
 
 Object.entries(items).forEach((item) => {
@@ -12,7 +12,7 @@ Object.entries(items).forEach((item) => {
   for (i = 0; i <= 4; i += 0.5) {
     console.log(
       `"${item[0]}-${i}": "${item[1][0]}: ${i * 2}px;  ${item[1][1]}: ${
-        i * 2
+        i * 4
       }px",`
     );
   }

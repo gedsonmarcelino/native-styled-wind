@@ -11,7 +11,7 @@ Object.entries(items).forEach((item) => {
   console.log(`"${item[0]}-px": "${item[1]}: 1px",`);
 
   for (i = 0; i <= 4; i += 0.5) {
-    console.log(`"${item[0]}-${i}": "${item[1]}: ${i * 2}px",`);
+    console.log(`"${item[0]}-${i}": "${item[1]}: ${i * 4}px",`);
   }
 
   for (i = 5; i <= 16; i++) {
