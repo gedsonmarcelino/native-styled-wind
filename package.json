@@ -1,6 +1,6 @@
 {
   "name": "native-styled-wind",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "",
   "main": "dist/components.js",
   "types": "dist/components.d.ts",
