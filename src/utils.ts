@@ -1,4 +1,6 @@
-import path from "path";
+import loadConfig from "load-config-file";
+
+loadConfig.register(".json", (value: string) => JSON.parse(value));
 
 export function hasBrackets(str: string) {
   return str.match(/([a-zA-Z-]+)-\{(\d+)\}/);
@@ -13,14 +15,12 @@ export function getValueIntoBrackets(match: string[]) {
 
 export function loadCustomConfig(fileName: string) {
   try {
-    const rootPath = path.resolve(process.cwd());
-    const filePath = path.resolve(rootPath, `./${fileName}.config.json`);
-    const customConfig = require(filePath);
+    const customConfig = loadConfig.loadSync(`${fileName}.config`);
     if (customConfig) {
       return customConfig;
     }
   } catch (error) {
-    // console.log("error :>> ", error);
+    console.log("error :>> ", error);
   }
 
   return {};
