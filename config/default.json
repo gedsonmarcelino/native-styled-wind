@@ -1,0 +1,28 @@
+{
+  "custom": {
+    "border-0": "border-width: 0px",
+    "border-2": "border-width: 2px",
+    "border-4": "border-width: 4px",
+    "border-8": "border-width: 8px",
+    "border": "border-width: 1px",
+
+    "font-normal": "font-weight: normal",
+    "font-bold": "font-weight: bold",
+
+    "top-7": "top: 14px",
+    "left-5": "left: 10px",
+
+    "text-black": "color: #000000",
+    "text-secondary": "color: #EFE3C8",
+    "text-secondary-dark": "color: #88776F",
+
+    "bg-primary-light": "background-color: #362C36",
+    "bg-primary-dark": "background-color: #171017",
+    "bg-secondary": "background-color: #EFE3C8",
+
+    "border-secondary": "border-color: #EFE3C8",
+    "border-secondary-dark": "border-color: #88776F",
+
+    "font-regular": "font-family: RosarivoRegular"
+  }
+}

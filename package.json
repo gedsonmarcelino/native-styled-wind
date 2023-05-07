@@ -1,12 +1,12 @@
 {
   "name": "native-styled-wind",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "",
   "main": "dist/components.js",
   "types": "dist/components.d.ts",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watchAll",
+    "test:watch": "set NODE_ENV=development && jest --watchAll",
     "build": "tsc",
     "prepublish": "npm run test && npm run build"
   },
@@ -20,7 +20,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "load-config-file": "^1.0.8",
+    "config": "^3.3.9",
     "styled-components": "^5.3.10"
   },
   "repository": {
