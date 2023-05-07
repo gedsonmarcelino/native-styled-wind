@@ -1,6 +1,9 @@
+import { getValueIntoBrackets, hasBrackets, loadCustomConfig } from "./utils";
+
 import CSS_TAILWIND from "./styles";
-import CSS_CUSTOM from "./custom";
-import { getValueIntoBrackets, hasBrackets } from "./utils";
+import config from "./config";
+
+const CSS_CUSTOM = loadCustomConfig(config.customFileName);
 
 const CSS = { ...CSS_TAILWIND, ...CSS_CUSTOM } as any;
 

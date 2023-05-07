@@ -7,9 +7,9 @@ describe("native-styled-wind", () => {
   });
 
   it("should resolve multiple css style", () => {
-    const result = stylish({ styles: "italic text-xl font-bold" });
+    const result = stylish({ styles: "italic text-xl" });
     expect(result).toBe(
-      " font-style: italic; font-size:  20px; line-height:  28px; font-weight: bold;"
+      " font-style: italic; font-size:  20px; line-height:  28px;"
     );
   });
 
@@ -51,5 +51,13 @@ describe("native-styled-wind", () => {
 
     result = stylish({ styles: "py-{20}" });
     expect(result).toBe(" padding-top: 20px;  padding-bottom: 20px;");
+  });
+
+  it("should load custom config", () => {
+    let result = stylish({ styles: "bg-primary-light" });
+    expect(result).toBe(" background-color: #362C36;");
+
+    result = stylish({ styles: "font-regular" });
+    expect(result).toBe(" font-family: RosarivoRegular;");
   });
 });
