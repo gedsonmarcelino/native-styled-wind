@@ -1,9 +1,8 @@
 import { getValueIntoBrackets, hasBrackets, loadCustomConfig } from "./utils";
 
 import CSS_TAILWIND from "./styles";
-import config from "./config";
 
-const CSS_CUSTOM = loadCustomConfig(config.customFileName);
+const CSS_CUSTOM = loadCustomConfig();
 const CSS = { ...CSS_TAILWIND, ...CSS_CUSTOM } as any;
 
 export function stylish(props: any) {

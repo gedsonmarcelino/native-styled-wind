@@ -1,5 +1,3 @@
-import config from "config";
-
 export function hasBrackets(str: string) {
   return str.match(/([a-zA-Z-]+)-\{(\d+)\}/);
 }
@@ -11,9 +9,9 @@ export function getValueIntoBrackets(match: string[]) {
   return { key, value };
 }
 
-export function loadCustomConfig(fileName: string) {
+export function loadCustomConfig() {
   try {
-    const customConfig = config.get("custom");
+    const customConfig = require("../../../native-styled-wind.json");
     if (customConfig) {
       return customConfig;
     }

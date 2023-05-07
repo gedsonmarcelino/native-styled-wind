@@ -1,4 +1,14 @@
 import { stylish } from "../src/stylish";
+import * as mockUtils from "../src/utils";
+
+jest.mock("../src/utils.ts", () => {
+  return {
+    ...jest.requireActual("../src/utils.ts"),
+    loadCustomConfig: jest
+      .fn()
+      .mockReturnValue(require("./mocks/native-styled-wind.json")),
+  };
+});
 
 describe("native-styled-wind", () => {
   it("should return a css style", () => {
