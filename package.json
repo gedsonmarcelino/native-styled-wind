@@ -1,6 +1,6 @@
 {
   "name": "native-styled-wind",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "",
   "main": "dist/components.js",
   "types": "dist/components.d.ts",
@@ -20,6 +20,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "path": "^0.12.7",
     "styled-components": "^5.3.10"
   },
   "repository": {

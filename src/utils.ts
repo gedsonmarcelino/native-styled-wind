@@ -13,7 +13,8 @@ export function getValueIntoBrackets(match: string[]) {
 
 export function loadCustomConfig(fileName: string) {
   try {
-    const filePath = path.resolve(__dirname, `../${fileName}.config.json`);
+    const rootPath = path.resolve(process.cwd());
+    const filePath = path.resolve(rootPath, `./${fileName}.config.json`);
     const customConfig = require(filePath);
     if (customConfig) {
       return customConfig;
